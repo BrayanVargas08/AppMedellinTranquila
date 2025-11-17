@@ -5,6 +5,7 @@ import { LoginPage } from './pages/login/login.page';
 import { RegisterPage } from './pages/register/register.page';
 import { DashboardPage } from './pages/dashboard/dashboard.page';
 import { RegistroEmocionalPage } from './pages/registro-emocional/registro-emocional.page';
+import {  FormularioEmocionalPage } from './pages/formulario-emociones/formulario-emociones.page';
 import { HistorialPage } from './pages/historial/historial.page';
 import { MeditacionesPage } from './pages/meditaciones/meditaciones.page';
 import { RespiracionPage } from './pages/respiracion/respiracion.page';
@@ -27,6 +28,8 @@ export const routes: Routes = [
   // Login y Registro
   { path: 'login', component: LoginPage },
   { path: 'register', component: RegisterPage },
+   { path: 'registro-emocional', component: RegistroEmocionalPage },
+    { path: 'formulario-emocionales', component: FormularioEmocionalPage },
 
   // ⭐ TABS - Navegación inferior
   {
