@@ -5,35 +5,45 @@
     <h1 class="title">Hola, Usuario</h1>
     <p class="subtitle">¿Cómo te sientes hoy?</p>
 
-    <div class="grid">
+    <!-- BLOQUE ESTADO EMOCIONAL -->
+<div class="estado-card">
+  <div class="estado-header">
+    <span class="titulo-seccion">Estado emocional 😁</span>
+  </div>
 
-      <button class="card" (click)="goTo('registro-emocional')">
-        <img src="../assets/icon/registro.png">
-        <span>Registro Emocional</span>
-      </button>
+  <button class="btn-estado" (click)="goTo('registro-emocional')">
+    Registrar estado de hoy
+  </button>
 
-      <button class="card" (click)="goTo('meditaciones')">
-        <img src="../assets/icon/favicon.png">
-        <span>Meditaciones</span>
-      </button>
-
-      <button class="card" (click)="goTo('respiracion')">
-        <img src="../assets/icon/favicon.png">
-        <span>Respiración</span>
-      </button>
-      
-
-      <button class="card" (click)="goTo('contacto')">
-        <img src="../assets/icon/favicon.png">
-        <span>Contacto</span>
-      </button>
-
-      <button class="card" (click)="goTo('configuracion')">
-        <img src="../assets/icon/favicon.png">
-        <span>Configuración</span>
-      </button>
-
+  <div class="stats">
+    <div class="stat-item">
+      <h3>09</h3>
+      <p>Días registrados</p>
     </div>
+
+    <div class="stat-item">
+      <h3>40%</h3>
+      <p>Estado positivo</p>
+    </div>
+  </div>
+</div>
+
+<!--  ACCESO RÁPIDO -->
+<h3 class="titulo-acceso">Acceso Rápido</h3>
+
+<div class="quick-access">
+
+  <button class="qa-card" (click)="goTo('meditaciones')">
+    <img src="assets/icon/meditacioncorazon.png" class="qa-icon">
+    <span>Meditación</span>
+  </button>
+
+  <button class="qa-card" (click)="goTo('contacto')">
+    <img src="assets/icon/ayuda-psicologica.png" class="qa-icon">
+    <span>Ayuda</span>
+  </button>
+
+</div>
 
   </div>
 
