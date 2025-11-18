@@ -4,7 +4,7 @@ import { Routes } from '@angular/router';
 import { LoginPage } from './pages/login/login.page';
 import { RegisterPage } from './pages/register/register.page';
 import { DashboardPage } from './pages/dashboard/dashboard.page';
-import { RegistroEmocionalPage } from './pages/registro-emocional/registro-emocional.page';
+
 import { MeditacionesPage } from './pages/meditaciones/meditaciones.page';
 import { ForoPage } from './pages/foro/foro.page';
 import { ConfiguracionPage } from './pages/configuracion/configuracion.page';
@@ -29,7 +29,7 @@ export const routes: Routes = [
   // Login / Registro
   { path: 'login', component: LoginPage },
   { path: 'register', component: RegisterPage },
-   { path: 'registro-emocional', component: RegistroEmocionalPage },
+   
     { path: 'formulario-emocionales', component: FormularioEmocionalPage },
     
 
@@ -39,13 +39,15 @@ export const routes: Routes = [
     component: TabsPage,
     children: [
       { path: 'dashboard', component: DashboardPage },
-      { path: 'registro-emocional', component: RegistroEmocionalPage },
+      
       { path: 'meditaciones', component: MeditacionesPage },
       { path: 'foro', component: ForoPage },
+      { path: 'contacto', component: ContactoPage },
       { path: 'configuracion', component: ConfiguracionPage },
 
       // ruta por defecto dentro de tabs
-      { path: '', redirectTo: 'dashboard', pathMatch: 'full' }
+      { path: '', redirectTo: 'dashboard', pathMatch: 'full' },
+      { path: 'notificaciones', component: NotificacionesPage },
     ]
   },
 
